@@ -1,0 +1,19 @@
+{
+    "name": "home/framework2",
+    "autoload": {
+        "psr-4": {
+            "app\\": "."
+        }
+    },
+    "authors": [
+        {
+            "name": "Anna",
+            "email": "whitrebbit@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "ext-curl": "*",
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

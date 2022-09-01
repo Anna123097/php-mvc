@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,500;0,600;0,900;1,900&family=Open+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #111827;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0px 20px;
+  height: 80px;
+}
+
+.container{
+  width: 80%;
+  margin:0 auto;
+
+
+}
+
+.header ul{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+.header ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  transition: .3s;
+  position: relative;
+}
+
+.header ul li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+
+}
+.header ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+.header ul li a:hover:after {
+
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.header .sign_up{
+  padding:5px 8px;
+  border: 1px solid rgb(248, 103, 6);
+  border-radius: 5px;
+  color: rgb(248, 103, 6);
+  font-weight: 500;
+  font-size: 14px;
+  transition: .3s;
+  
+}
+
+.home_section {
+  background: #111827;
+  height: calc(100vh-80px);
+}
+
+.status-error {
+  border: 1px solid red;
+}
+.form_title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.form_begin {
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #e2e2e2;
+}
+.form_begin form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  
+}
+.form-group label {
+  font-size: 14px;
+}
+
+.input_field {
+  padding: 6px 9px;
+  margin-top:4px;
+
+}
+.field-error {
+  color: red;
+  font-size: 14px;
+}
+.btn-submit{
+  background-color: #2563EB;
+  padding: 12px 24px; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border-radius: 5px;
+  /* height: 40px; */
+  border:0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.flex_container {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profil_buttons .login{
+  background-color: #2563EB;
+  padding: 12px 24px; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.profil_buttons .signup{
+  background-color: #1F2937;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 8px;
+  transition: 0.3s;
+}
+
+.profil_buttons .signup:hover{
+  background-color: #2563EB;
+}
+
+.light1{
+  position: absolute;
+left: -87px;
+top: 307px;
+width: 220px;
+height: 220px;
+background: #1D4ED8;
+filter: blur(100px);
+}
+
+.light2{
+  position: absolute;
+  top:365px;
+  left:693px;
+  height: 100px;
+  width: 100px;
+  background: #A21CAF;
+filter: blur(100px);
+}
+
+.light3{
+  position: absolute;
+  top:339px;
+  right:25px;
+  height: 340px;
+  width: 340px;
+  background: #2563EB;
+  filter: blur(100px);
+  z-index:0
+}
+
+.mainscreen{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  align-items: center;
+  position:relative;
+  z-index:2;
+}
+
+.mainscreen .leftPart h1{
+  font-size:70px;
+  background: linear-gradient(93.54deg, #3B82F6 9.03%, #D946EF 43.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mainscreen .leftPart p{
+  font-weight: 500;
+  font-size: 15px;
+  color: #E5E7EB;
+  margin-top:28px;
+}
+
+
+.mainscreen .leftPart button{
+  width: 168px;
+  height: 59px;
+  background: linear-gradient(86.95deg, #3B82F6 2.58%, #D946EF 105.04%), #F9FAFB;
+  border-radius: 6px;
+  margin-top:28px;
+  border:none;
+  color: #F9FAFB;
+  font-size: 16px;
+}
+
+.error_message {
+  margin-top: 20px;
+  color: #fff;
+}
